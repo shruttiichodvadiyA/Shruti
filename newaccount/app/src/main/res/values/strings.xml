@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">newaccount</string>
+    <string name="create">Create new account</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="pass">Password</string>
+    <string name="chek">I agree to the terms &amp; conditions</string>
+    <string name="account">Create account</string>
+    <string name="user">Already a user ? Log in</string>
+</resources>

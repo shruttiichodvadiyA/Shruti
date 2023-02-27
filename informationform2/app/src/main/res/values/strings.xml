@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">informationform</string>
+    <string name="name">please entre name</string>
+    <string name="password">entre password</string>
+    <string name="confirm">confirm password</string>
+    <string name="address">please entre address</string>
+</resources>

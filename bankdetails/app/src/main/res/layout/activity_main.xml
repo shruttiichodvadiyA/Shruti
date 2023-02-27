@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+<!--    title-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BANK DETAILS"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <!--                sbi details-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/imgsbi"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/sbi"/>
+<!--                btncall-->
+                <ImageButton
+                    android:id="@+id/callsbi"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/call"
+                    android:scaleType="fitXY" />
+
+<!--                btnvisit-->
+                <ImageButton
+                    android:id="@+id/visitsbi"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                   android:src="@drawable/share"
+                    android:scaleType="fitXY" />
+
+<!--                btnshare-->
+                <ImageButton
+                    android:id="@+id/sharesbi"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="10dp"
+                    android:src="@drawable/link"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+
+            <!--                sbi details-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/imghdfc"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/hdfc"/>
+                <!--                btncall-->
+                <ImageButton
+                    android:id="@+id/callhdfc"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/call"
+                    android:scaleType="fitXY" />
+
+
+                <!--                btnvisit-->
+                <ImageButton
+                    android:id="@+id/visithdfc"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/share"
+                    android:scaleType="fitXY" />
+
+                <!--                btnshare-->
+                <ImageButton
+                    android:id="@+id/sharehdfc"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="10dp"
+                    android:src="@drawable/link"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+
+            <!--                sbi details-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/imgkotak"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/kotak"/>
+                <!--                btncall-->
+                <ImageButton
+                    android:id="@+id/callkotak"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/call"
+                    android:scaleType="fitXY" />
+
+
+                <!--                btnvisit-->
+                <ImageButton
+                    android:id="@+id/visitkotak"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/share"
+                    android:scaleType="fitXY" />
+
+                <!--                btnshare-->
+                <ImageButton
+                    android:id="@+id/sharekotak"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="10dp"
+                    android:src="@drawable/link"
+                    android:scaleType="fitXY"/>
+
+            </LinearLayout>
+
+            <!--                sbi details-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/imgbob"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/baroda"/>
+                <!--                btncall-->
+
+                <ImageButton
+                    android:id="@+id/callbob"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/call"
+                    android:scaleType="fitXY" />
+
+
+                <!--                btnvisit-->
+                <ImageButton
+                    android:id="@+id/visitbob"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/share"
+                    android:scaleType="fitXY" />
+
+
+                <!--                btnshare-->
+
+                <ImageButton
+                    android:id="@+id/sharebob"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="10dp"
+                    android:src="@drawable/link"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+
+            <!--                sbi details-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/imgyes"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/yes"/>
+                <!--                btncall-->
+
+                <ImageButton
+                    android:id="@+id/callyes"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/call"
+                    android:scaleType="fitXY"/>
+
+                <!--                btnvisit-->
+                <ImageButton
+                    android:id="@+id/visityes"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/share"
+                    android:scaleType="fitXY" />
+
+
+                <!--                btnshare-->
+
+
+                <ImageButton
+                    android:id="@+id/shareyes"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="10dp"
+                    android:src="@drawable/link"
+                    android:scaleType="fitXY" />
+
+            </LinearLayout>
+
+            <!--                sbi details-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/imgicici"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/icici"/>
+                <!--                btncall-->
+
+                <ImageButton
+                    android:id="@+id/callicici"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/call"
+                    android:scaleType="fitXY" />
+
+                <!--                btnvisit-->
+                <ImageButton
+                    android:id="@+id/visiticici"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/share"
+                    android:scaleType="fitXY" />
+
+                <!--                btnshare-->
+
+                <ImageButton
+                    android:id="@+id/shareicici"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="10dp"
+                    android:src="@drawable/link"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+
+            <!--                sbi details-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/imgvarrachha"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/varrchha"/>
+                <!--                btncall-->
+                <ImageButton
+                    android:id="@+id/callvarrachha"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/call"
+                    android:scaleType="fitXY" />
+
+
+                <!--                btnvisit-->
+                <ImageButton
+                    android:id="@+id/visitvarrachha"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/share"
+                    android:scaleType="fitXY" />
+
+                <!--                btnshare-->
+
+                <ImageButton
+                    android:id="@+id/sharevarrachha"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="10dp"
+                    android:src="@drawable/link"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+
+            <!--                sbi details-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/imgunion"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/union"/>
+                <!--                btncall-->
+                <ImageButton
+                    android:id="@+id/callunion"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/call"
+                    android:scaleType="fitXY"/>
+
+                <!--                btnvisit-->
+                <ImageButton
+                    android:id="@+id/visitunion"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/share"
+                    android:scaleType="fitXY"/>
+
+                <!--                btnshare-->
+
+                <ImageButton
+                    android:id="@+id/shareunion"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="10dp"
+                    android:src="@drawable/link"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+
+            <!--                sbi details-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/imgaxis"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/axis"/>
+                <!--                btncall-->
+                <ImageButton
+                    android:id="@+id/callaxis"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/call"
+                    android:scaleType="fitXY" />
+
+
+                <!--                btnvisit-->
+                <ImageButton
+                    android:id="@+id/visitaxis"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/share"
+                    android:scaleType="fitXY" />
+
+
+                <!--                btnshare-->
+
+                <ImageButton
+                    android:id="@+id/shareaxis"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="10dp"
+                    android:src="@drawable/link"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+
+
+            <!--                sbi details-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+
+                <ImageView
+                    android:id="@+id/imgindus"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/indusland"/>
+                <!--                btncall-->
+                <ImageButton
+                    android:id="@+id/callindus"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/call"
+                    android:scaleType="fitXY" />
+
+                <!--                btnvisit-->
+                <ImageButton
+                    android:id="@+id/visitindus"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/share"
+                    android:scaleType="fitXY" />
+
+
+                <!--                btnshare-->
+
+                <ImageButton
+                    android:id="@+id/shareindus"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="10dp"
+                    android:src="@drawable/link"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">loginpage</string>
+    <string name="log_in">Log In</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="remember">Remember Me?</string>
+    <string name="forget">Forget Password?</string>
+    <string name="account">Log In With Your Account</string>
+    <string name="login">Login With</string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Google</string>
+    <string name="newuser">New user? Create account</string>
+
+</resources>

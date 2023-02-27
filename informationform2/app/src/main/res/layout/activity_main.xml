@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgimage"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txttitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="registration form"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:padding="10sp"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"/>
+    <EditText
+        android:id="@+id/edtname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name"
+        android:paddingLeft="10sp"
+        android:textSize="20sp"
+        android:imeOptions="actionNext"
+        android:layout_below="@+id/txttitle"
+        android:layout_marginTop="40dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_below="@+id/edtname"
+        android:id="@+id/edtpassword">
+    <EditText
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="@string/password"
+        android:paddingLeft="10sp"
+        android:imeOptions="actionNext"
+        android:layout_below="@+id/edtname"
+        android:layout_marginTop="30dp"/>
+    <EditText
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="@string/confirm"
+        android:imeOptions="actionNext"
+        android:layout_marginTop="30dp"/>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/edtaddress"
+        android:layout_width="match_parent"
+        android:paddingLeft="10sp"
+        android:layout_height="wrap_content"
+        android:hint="@string/address"
+        android:textSize="20sp"
+        android:imeOptions="actionNext"
+        android:layout_below="@+id/edtpassword"
+        android:layout_marginTop="50dp"/>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#062AF1"
+        android:imeOptions="actionDone"
+        android:layout_below="@id/edtaddress"
+        android:padding="15dp"
+        android:text="registred"
+        android:layout_marginTop="60dp"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="copyright @abc"
+        android:layout_toLeftOf="@+id/imgarrow"
+        android:layout_marginRight="40dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/black"
+        android:layout_marginBottom="20dp"/>
+
+    <ImageView
+        android:id="@+id/imgarrow"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/arrow"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="19dp"/>
+
+
+</RelativeLayout>

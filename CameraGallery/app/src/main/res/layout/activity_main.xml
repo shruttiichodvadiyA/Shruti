@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"/>
+    <Button
+        android:layout_marginTop="@dimen/_50sdp"
+        android:id="@+id/gallery"
+        android:text="gallery"
+        android:textSize="@dimen/_20ssp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_marginTop="@dimen/_20sdp"
+        android:id="@+id/camera"
+        android:text="camera"
+        android:textSize="@dimen/_20ssp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="choose photo"
+    android:textSize="@dimen/_20ssp"
+    android:layout_marginTop="@dimen/_20sdp"
+    android:id="@+id/photos"/>
+</LinearLayout>

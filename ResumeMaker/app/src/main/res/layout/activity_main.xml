@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg9"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="RESUME"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_20ssp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="left"
+                android:text="PERSONAL DETAILS :"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtfirstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:gravity="left"
+                android:hint="FIRST NAME"
+                android:padding="@dimen/_10sdp"
+                android:background="@drawable/squar2"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textStyle="normal" />
+
+
+            <EditText
+                android:id="@+id/edtlastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:gravity="left"
+                android:hint="LAST NAME"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/squar2"
+                android:padding="@dimen/_10sdp"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/edtmobilenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:background="@drawable/squar2"
+                android:gravity="left"
+                android:hint="MOBILE NUMBER"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:padding="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/edtemailid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:gravity="left"
+                android:hint="EMAIL ID"
+                android:background="@drawable/squar2"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:padding="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/edtaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:background="@drawable/squar2"
+                android:gravity="left"
+                android:hint="ADDRESS"
+                android:imeOptions="actionNext"
+                android:inputType="textMultiLine"
+                android:padding="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:text="GENDER :"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="italic" />
+
+
+            <RadioGroup
+                android:id="@+id/radiogroup1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/radiomale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="MALE"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="normal" />
+
+                <RadioButton
+                    android:id="@+id/radiofemale"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="FEMALE"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="normal" />
+
+                <RadioButton
+                    android:id="@+id/radioother"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="OTHER"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="normal" />
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="HOBBIES :"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="italic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_weight="1">
+
+
+                <CheckBox
+                    android:id="@+id/chkcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="CODING"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="normal" />
+
+                <CheckBox
+                    android:id="@+id/chkdance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="DANCING"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="normal" />
+
+                <CheckBox
+                    android:id="@+id/chkread"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="READING"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_weight="1">
+
+                <CheckBox
+                    android:id="@+id/chkmovie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="MOVIE"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="normal" />
+
+                <CheckBox
+                    android:id="@+id/chktravell"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="TRAVELLING"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="normal" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="MARRIED STATUS :"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="italic" />
+
+            <RadioGroup
+                android:id="@+id/radiogroup2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/radiomarrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="MARRID"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="normal" />
+
+                <RadioButton
+                    android:id="@+id/radiounmarrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="UNMARRID"
+                    android:textSize="@dimen/_15ssp"
+                    android:textStyle="normal" />
+
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="EDUCATION DETAILS :"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/squar2"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="18"
+                        android:text="CLASS"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:gravity="center_horizontal"
+                        android:text="10"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:gravity="center_horizontal"
+                        android:text="12"
+
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".4"
+                        android:text="GRADUATION"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:background="@drawable/squar2"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.7"
+                        android:text="PERCENTEGE"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp" />
+
+                    <EditText
+                        android:id="@+id/edt10pr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:layout_weight="1"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal" />
+
+                    <EditText
+                        android:id="@+id/edt12pr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_25sdp"
+                        android:layout_weight="1"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal" />
+
+                    <EditText
+                        android:id="@+id/edtgraduatpr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:imeOptions="actionNext"
+                        android:inputType="numberDecimal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/squar2"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:text="YEAR"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15ssp" />
+
+                    <EditText
+                        android:id="@+id/edt10yer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_weight="1"
+                        android:imeOptions="actionNext"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/edt12yer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:layout_weight="1"
+                        android:imeOptions="actionNext"
+                        android:inputType="number" />
+
+                    <EditText
+                        android:id="@+id/edtgraduatyer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:imeOptions="actionNext"
+                        android:inputType="number" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:text="PAST JOB EXPERIENCE :"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtjob"
+                android:background="@drawable/squar2"
+                android:padding="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:imeOptions="actionNext"
+                android:inputType="textMultiLine"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:text="INTRESET AREA :"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtintreset"
+                android:background="@drawable/squar2"
+                android:padding="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:imeOptions="actionNext"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="normal" />
+
+
+            <TextView
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:text="SKILLS(KNOWN LANGUAGES) :"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/chkc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="C"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15ssp" />
+
+                <CheckBox
+                    android:id="@+id/chkcplus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="C++"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15ssp" />
+
+                <CheckBox
+                    android:id="@+id/chkcgaming"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="#c"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15ssp" />
+
+
+                <CheckBox
+                    android:id="@+id/chkjava"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="JAVA"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15ssp" />
+
+
+                <CheckBox
+                    android:id="@+id/chkandroid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ANDROID"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15ssp" />
+
+
+                <CheckBox
+                    android:id="@+id/chkkotlin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="KOTLIN"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15ssp" />
+
+
+                <CheckBox
+                    android:id="@+id/chkphp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PHP"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15ssp" />
+
+
+                <CheckBox
+                    android:id="@+id/chkhtml"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="HTML"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15ssp" />
+
+                <CheckBox
+                    android:id="@+id/chkcss"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CSS"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15ssp" />
+
+
+                <CheckBox
+                    android:id="@+id/chkweb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="WEB DESIGNING"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15ssp" />
+
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnsubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:background="@drawable/submit"
+                android:imeOptions="actionDone"
+                android:paddingHorizontal="@dimen/_15sdp"
+                android:paddingVertical="@dimen/_15sdp"
+                android:text="SUBMIT"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:text="THANK YOU !"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="italic" />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

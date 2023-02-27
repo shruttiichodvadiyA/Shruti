@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgimage"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txttitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="registration form"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:padding="10sp"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/edtname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter your name"
+        android:layout_below="@id/txttitle"
+        android:layout_marginTop="40dp"
+        android:textSize="20sp"
+      android:layout_marginLeft="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/lineout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_below="@id/edtname">
+
+        <EditText
+            android:id="@+id/edtpassword"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="enter password"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/confirmpass"
+            android:hint="conform password"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edtaddress"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_height="wrap_content"
+        android:hint="enter address"
+        android:layout_below="@+id/lineout"
+        android:textSize="20sp"
+        android:imeOptions="actionNext"
+        android:layout_marginTop="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/lineout1"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/edtaddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dancing"
+        android:id="@+id/chkdancing" />
+
+        <CheckBox
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="reading"
+            android:id="@+id/chkreading" />
+
+
+        <CheckBox
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="music"
+            android:id="@+id/chkmusic" />
+
+
+    </LinearLayout>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="submit"
+        android:id="@+id/btnsubmit"
+        android:layout_below="@id/lineout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:background="#329BCA"
+        android:paddingHorizontal="50dp"
+        android:textSize="30sp"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>
